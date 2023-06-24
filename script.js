@@ -1,0 +1,6 @@
+const input = document.querySelector(".user-input")
+const pass = document.querySelector(".pass-input")
+const submit = document.querySelector(".signin-button")
+const userMsg = document.querySelector(".username-msg")
+const passMsg = document.querySelector(".password-msg")
+const successfullyMsg = document.querySelector(".signin-status")
