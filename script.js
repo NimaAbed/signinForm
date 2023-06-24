@@ -30,6 +30,21 @@ function btnHandler(){
 
 
     } else {
-
+        if (!(input.value.includes("@")) || input.value.includes(".")) {
+            console.log("Email moshkel darad")
+            userMsg.innerHTML = "Please enter a valid Email"
+        }
+        if (input.value.includes("@") && input.value.includes(".")) {
+            userMsg.innerHTML = ""
+        }
+        if(pass.value.length>=4){
+            pass.innerHTML=""
+        }
+        if (pass.value.length == 0) {
+            // console.log("pass moshkel darad")
+            passMsg.innerHTML = "Please enter your password"
+        } else if (pass.value.length < 4) {
+            passMsg.innerHTML = "Your password is too short"
+        }
     }
 }
